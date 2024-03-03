@@ -1,0 +1,41 @@
+@import url(/src/styles/global.scss);
+
+.title-wrap {
+  font-family: "BagelFatOne-Regular", sans-serif;
+  text-align: center;
+  background-color: #c1efff;
+  text-align: center;
+  min-height: 75vh;
+  margin: 4.5em 0 0 0;
+  color: #000000;
+  font-size: 2em;
+  font-weight: 300;
+  font-size: 1em;
+  position: relative; // 가상 요소를 위한 포지셔닝 컨텍스트 설정
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 20%;
+    background: linear-gradient(to bottom, #c1efff, rgb(255, 255, 255));
+  }
+
+  h1 {
+    margin-top: -0.7em;
+    font-weight: 100;
+    font-size: 7em;
+    user-select: none;
+    // cursor: url("/public/circle-pointer.png"), auto;
+    color: #ffffff;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+      1px 1px 0 #ffffff;
+
+    span {
+      display: block;
+    }
+  }
+}

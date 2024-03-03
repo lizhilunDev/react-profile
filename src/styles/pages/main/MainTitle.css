@@ -1,0 +1,37 @@
+@import url(/src/styles/global.scss);
+.title-wrap {
+  font-family: "BagelFatOne-Regular", sans-serif;
+  text-align: center;
+  background-color: #c1efff;
+  text-align: center;
+  min-height: 75vh;
+  margin: 4.5em 0 0 0;
+  color: #000000;
+  font-size: 2em;
+  font-weight: 300;
+  font-size: 1em;
+  position: relative;
+}
+.title-wrap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20%;
+  background: linear-gradient(to bottom, #c1efff, rgb(255, 255, 255));
+}
+.title-wrap h1 {
+  margin-top: -0.7em;
+  font-weight: 100;
+  font-size: 7em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: #ffffff;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+.title-wrap h1 span {
+  display: block;
+}
