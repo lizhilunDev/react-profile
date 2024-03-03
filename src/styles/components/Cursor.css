@@ -1,0 +1,8 @@
+.circle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(28, 28, 28, 0.671);
+  pointer-events: none;
+}
