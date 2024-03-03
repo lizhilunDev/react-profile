@@ -1,0 +1,7 @@
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 가로에 5개의 칸을 생성 */
+  grid-template-rows: repeat(3, 80px); /* 세로에 3개의 칸을 생성 */
+  gap: 30px; /* 그리드 아이템 사이의 간격 설정 */
+  align-items: center;
+}
