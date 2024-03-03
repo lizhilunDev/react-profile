@@ -3,7 +3,7 @@ import "../../styles/pages/main/MainTitle.css";
 const MainTitle = () => {
   return (
     <>
-      <div class='title-wrap'>
+      <div className='title-wrap'>
         <h1>
           <sapn>Front-end</sapn>
           <span>Jiyoon Lee</span>
