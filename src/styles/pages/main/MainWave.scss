@@ -1,0 +1,35 @@
+@keyframes eternal-wave {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+.wave-graphics {
+  display: block;
+  width: 100%;
+  height: 10em;
+  max-height: 100vh;
+  margin: 0;
+  padding: 10em 0 0 0;
+}
+
+.wave-group > use {
+  animation: eternal-wave 12s linear infinite;
+
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: -2s;
+    animation-duration: 5s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 3s;
+  }
+}
