@@ -1,10 +1,9 @@
-@charset "UTF-8";
 @keyframes bounce {
   0%, 100% {
-    transform: translateX(-50%) translateY(0); /* 원래 위치 */
+    transform: translateX(-50%) translateY(0);
   }
   50% {
-    transform: translateX(-50%) translateY(-20px); /* 위로 20px 이동 */
+    transform: translateX(-50%) translateY(-20px);
   }
 }
 .arrow {

@@ -5,7 +5,7 @@ const MainTitle = () => {
     <>
       <div className='title-wrap'>
         <h1>
-          <sapn>Front-end</sapn>
+          <span>Front-end</span>
           <span>Jiyoon Lee</span>
         </h1>
       </div>
