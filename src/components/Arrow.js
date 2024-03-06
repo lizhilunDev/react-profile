@@ -1,11 +1,11 @@
 import "../styles/components/Arrow.css";
 
-const Arrow = ({ up }) => {
+const Arrow = ({ up, onClick }) => {
   const arrowClass = up ? "up" : "down";
 
   return (
     <>
-      <div className={`arrow ${arrowClass}`}></div>
+      <div className={`arrow ${arrowClass}`} onClick={onClick}></div>
     </>
   );
 };

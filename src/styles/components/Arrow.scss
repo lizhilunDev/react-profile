@@ -13,18 +13,18 @@
   width: 40px;
   height: 40px;
   position: fixed;
-  bottom: 100px;
+  bottom: 70px;
   left: 50%;
   transform: translateX(-50%);
   transition: transform 0.5s ease;
   cursor: pointer;
 
   &.up {
-    background-image: url("/src/assets/icons/icon_arrow_up.png");
+    background-image: url('/src/assets/icons/icon_arrow_up.png');
   }
 
   &.down {
-    background-image: url("/src/assets/icons/icon_arrow_down.png");
+    background-image: url('/src/assets/icons/icon_arrow_down.png');
   }
 
   &:hover {
