@@ -1,10 +1,14 @@
-import Section from "../../components/Section";
-import MovingCard from "../../components/MovingCard";
+import Section from '../../components/Section';
+import MovingCard from '../../components/MovingCard';
 
 const AboutMe = () => {
   return (
     <>
-      <Section title={"About Me."} content={<MovingCard />} />
+      <Section
+        title={'About Me.'}
+        content={<MovingCard />}
+        description='마우스를 움직여보세요!'
+      />
     </>
   );
 };
