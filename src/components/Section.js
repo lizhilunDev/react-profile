@@ -1,9 +1,10 @@
-import "../styles/components/Section.css";
+import '../styles/components/Section.css';
+import classNames from 'classnames';
 
-const Section = ({ title, content }) => {
+const Section = ({ title, content, noBorder = false, description = '' }) => {
   return (
     <>
-      <section className='section'>
+      <section className={classNames('section', { 'no-border': noBorder })}>
         <div className='section-title-wrap'>
           <h1>
             <span>{title}</span>
@@ -11,6 +12,11 @@ const Section = ({ title, content }) => {
         </div>
 
         {content}
+        {description && (
+          <div className='description-wrap'>
+            <span>{description}</span>
+          </div>
+        )}
       </section>
     </>
   );
