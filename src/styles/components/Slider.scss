@@ -1,0 +1,200 @@
+@import '../global.css';
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+$slider-width: 60vw;
+$slider-height: 50vh;
+
+.slider {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: $slider-width;
+  height: $slider-height;
+}
+
+.slide-container {
+  overflow: hidden;
+  position: relative;
+  width: $slider-width;
+  height: $slider-height;
+  z-index: 1;
+  border-radius: 30px;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.05);
+}
+
+.slide-wrapper {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: -$slider-width;
+  width: 10000px;
+  transition: left 0.5s ease-in-out;
+}
+
+.slide {
+  width: $slider-width;
+  height: $slider-height;
+  background: #c1f0ff20;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 50px;
+  font-family: 'Pretendard-Regular', sans-serif;
+  color: #000000;
+  display: flex;
+  align-items: start;
+  text-align: start;
+
+  .inner-left {
+    flex: 1;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 2.5px;
+      height: calc($slider-height - 100px);
+      background-color: #ffffff;
+    }
+
+    img {
+      width: 22px;
+      margin-left: 7px;
+
+      &:hover {
+        opacity: 1;
+        -webkit-animation: flash 1.5s;
+        animation: flash 1.5s;
+      }
+    }
+  }
+
+  .inner-right {
+    max-height: calc($slider-height - 100px);
+    overflow: auto;
+    margin-left: 20px;
+    flex: 2;
+
+    &.has-bottom-scroll {
+      border-bottom: #2a2a2a18 1px dashed;
+    }
+
+    &.has-top-scroll {
+      border-top: #2a2a2a18 1px dashed;
+    }
+
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #00000074;
+      border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f7f7f7;
+    }
+  }
+
+  h1,
+  h2 {
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    display: block;
+  }
+
+  h2 {
+    display: block;
+
+    &.fe,
+    &.be,
+    &.stack {
+      text-align: center;
+      padding: 3px;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      display: inline-block;
+      color: white;
+    }
+
+    &.fe {
+      background-color: #ffb3b3;
+    }
+
+    &.be {
+      background-color: #95f4a6;
+    }
+
+    &.stack {
+      background-color: #ffe9ae;
+    }
+  }
+
+  li {
+    margin: 10px;
+
+    &::before {
+      content: '-';
+      margin-right: 8px;
+    }
+  }
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  margin-top: -20px;
+}
+
+.prev,
+.next {
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    transform: scale(1.8);
+  }
+}
+
+.prev {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+  left: -55px;
+}
+
+.next {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+  right: -55px;
+}
