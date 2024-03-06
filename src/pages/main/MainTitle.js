@@ -1,4 +1,4 @@
-import "../../styles/pages/main/MainTitle.css";
+import '../../styles/pages/main/MainTitle.css';
 
 const MainTitle = () => {
   return (

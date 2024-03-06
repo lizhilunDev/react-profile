@@ -22,6 +22,7 @@
   background: linear-gradient(to bottom, #c1efff, rgb(255, 255, 255));
 }
 .title-wrap h1 {
+  padding: 0.5em;
   margin-top: -0.7em;
   font-weight: 100;
   font-size: 7em;
