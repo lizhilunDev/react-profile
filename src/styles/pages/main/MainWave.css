@@ -9,9 +9,8 @@
 .wave-graphics {
   display: block;
   width: 100%;
-  height: 10em;
+  height: 25vh;
   max-height: 100vh;
-  margin: 0;
   padding: 10em 0 0 0;
 }
 
