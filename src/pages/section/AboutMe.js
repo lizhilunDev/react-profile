@@ -7,7 +7,7 @@ const AboutMe = () => {
       <Section
         title={'About Me.'}
         content={<MovingCard />}
-        description='마우스를 움직여보세요!'
+        description='카드 위에서 마우스를 움직여보세요!'
       />
     </>
   );
