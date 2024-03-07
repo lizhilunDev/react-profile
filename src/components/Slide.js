@@ -2,7 +2,13 @@ import classNames from 'classnames';
 import { useEffect, useRef, useState } from 'react';
 import linkImg from '../assets/icons/link.png';
 
-const Slide = ({ title = '', subTitles = [], descriptions = {}, linkUrl }) => {
+const Slide = ({
+  title = '',
+  subTitles = [],
+  descriptions = {},
+  linkUrl,
+  page,
+}) => {
   const [showTopBorder, setShowTopBorder] = useState(false);
   const [showBottomBorder, setShowBottomBorder] = useState(false);
 
@@ -16,7 +22,10 @@ const Slide = ({ title = '', subTitles = [], descriptions = {}, linkUrl }) => {
     if (scrollTop + clientHeight >= scrollHeight) {
       setShowTopBorder(true);
       setShowBottomBorder(false);
-    } else if (scrollTop === 0) {
+    } else if (scrollTop === scrollHeight && scrollTop === 0) {
+      setShowTopBorder(false);
+      setShowBottomBorder(false);
+    } else if (scrollTop !== scrollHeight && scrollTop === 0) {
       setShowTopBorder(false);
       setShowBottomBorder(true);
     } else {
@@ -51,15 +60,20 @@ const Slide = ({ title = '', subTitles = [], descriptions = {}, linkUrl }) => {
     <>
       <div className='slide'>
         <div className='inner-left'>
-          <h1>{title}</h1>
-          {subTitles.map((subTitle, index) => (
-            <h2 key={`subtitle_${index}`}>{subTitle}</h2>
-          ))}
-          {linkUrl && (
-            <a href={linkUrl} target='_blank' rel='noreferrer'>
-              <img src={linkImg} alt='link'></img>
-            </a>
-          )}
+          <div className='title-wrapper'>
+            <h1>{title}</h1>
+            {subTitles.map((subTitle, index) => (
+              <h2 key={`subtitle_${index}`}>{subTitle}</h2>
+            ))}
+            {linkUrl && (
+              <a href={linkUrl} target='_blank' rel='noreferrer'>
+                <img src={linkImg} alt='link'></img>
+              </a>
+            )}
+          </div>
+          <div className='page-wrapper'>
+            <h2 className='page'>{page} / 5</h2>
+          </div>
         </div>
 
         <div
@@ -75,7 +89,11 @@ const Slide = ({ title = '', subTitles = [], descriptions = {}, linkUrl }) => {
               <h2 className={desc.chipClass}>{desc.chipText}</h2>
               {desc.contents.map((content, i) => (
                 <ul key={`content_${i}`}>
-                  <li>
+                  <li
+                    className={
+                      desc.chipClass !== 'description' ? 'list-style' : ''
+                    }
+                  >
                     <span>{content}</span>
                   </li>
                 </ul>
