@@ -36,6 +36,12 @@ const Page = () => {
   };
 
   useEffect(() => {
+    // 페이지 최상단으로 이동
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+
+    // 스크롤 이벤트 리스너
     const handleScroll = () => {
       const finalSection = document.querySelector('.final-section');
       const { top, bottom } = finalSection.getBoundingClientRect();
