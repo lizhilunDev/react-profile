@@ -1,16 +1,10 @@
+@charset "UTF-8";
 @import url(/src/styles/global.scss);
 .title-wrap {
-  font-family: "BagelFatOne-Regular", sans-serif;
-  text-align: center;
+  position: relative;
+  height: 60vh;
   background-color: #c1efff;
   text-align: center;
-  min-height: 75vh;
-  margin: 4.5em 0 0 0;
-  color: #000000;
-  font-size: 2em;
-  font-weight: 300;
-  font-size: 1em;
-  position: relative;
 }
 .title-wrap::after {
   content: "";
@@ -19,20 +13,28 @@
   right: 0;
   bottom: 0;
   height: 20%;
-  background: linear-gradient(to bottom, #c1efff, rgb(255, 255, 255));
+  background: linear-gradient(to bottom, #c1efff, #ffffff);
 }
 .title-wrap h1 {
-  padding: 0.5em;
-  margin-top: -0.7em;
+  font-family: "BagelFatOne-Regular", sans-serif;
   font-weight: 100;
-  font-size: 7em;
+  font-size: 110px;
+  color: #ffffff;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  color: #ffffff;
-  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  -webkit-text-stroke: 1px #000000;
   text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 .title-wrap h1 span {
   display: block;
+}
+
+@media (max-width: 1023px) {
+  .title-wrap h1 {
+    font-size: 15vw;
+  }
+}
+@media (max-width: 767px) {
+  /* 모바일 */
 }
