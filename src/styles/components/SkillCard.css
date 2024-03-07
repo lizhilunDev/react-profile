@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
+  width: 160px;
   height: 60px;
   border: 1px solid #ffffff;
   border-radius: 10px;
@@ -14,7 +14,6 @@
 .skill-card .skill-title {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 5px;
 }
 .skill-card .skill-title img {
@@ -25,7 +24,7 @@
   display: none;
   font-size: 11px;
   padding: 20px;
-  line-height: 150%;
+  line-height: 1.5;
 }
 .skill-card:hover {
   height: 100px;
@@ -40,4 +39,7 @@
   text-align: justify;
   text-justify: inter-word;
   word-break: break-all;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }

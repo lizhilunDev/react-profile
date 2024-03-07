@@ -1,5 +1,3 @@
-@import '../global.css';
-
 @-webkit-keyframes flash {
   0% {
     opacity: 0.4;
@@ -17,16 +15,14 @@
   }
 }
 
-$slider-width: 60vw;
-$slider-height: 50vh;
+$slider-width: 1020px;
+$slider-height: 450px;
 
 .slider {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   width: $slider-width;
   height: $slider-height;
+  margin-bottom: 6vh;
 }
 
 .slide-container {
@@ -44,12 +40,13 @@ $slider-height: 50vh;
   position: relative;
   top: 0;
   left: -$slider-width;
-  width: 10000px;
+  width: 5100px;
   transition: left 0.5s ease-in-out;
 }
 
 .slide {
-  width: $slider-width;
+  position: relative;
+  min-width: $slider-width;
   height: $slider-height;
   background: #c1f0ff20;
   border-radius: 2px;
@@ -103,11 +100,11 @@ $slider-height: 50vh;
     }
 
     &::-webkit-scrollbar {
-      width: 7px;
+      width: 6.5px;
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: #00000074;
+      background-color: #83838374;
       border-radius: 5px;
     }
 
