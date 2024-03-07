@@ -10,8 +10,8 @@ const Section = ({ title, content, noBorder = false, description = '' }) => {
             <span>{title}</span>
           </h1>
         </div>
+        <div className='container'>{content}</div>
 
-        {content}
         {description && (
           <div className='description-wrap'>
             <span>{description}</span>
