@@ -10,9 +10,8 @@ const Projects = () => {
         id='work'
         title={'Work Experience.'}
         content={content}
-        noBorder={true}
         description=''
-      ></Section>
+      />
     </>
   );
 };
