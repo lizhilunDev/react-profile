@@ -1,9 +1,9 @@
-import "../styles/components/MovingCard.css";
+import '../styles/components/MovingCard.css';
 
-import React, { useEffect, useRef } from "react";
-import phoneImage from "../assets/images/call.png";
-import emailImage from "../assets/images/email.png";
-import birthdayImage from "../assets/images/birthday.png";
+import React, { useEffect, useRef } from 'react';
+import resumeImage from '../assets/images/resume.png';
+import emailImage from '../assets/images/email.png';
+import git from '../assets/images/git.png';
 
 const MovingCard = () => {
   const cardsRef = useRef(null);
@@ -35,10 +35,10 @@ const MovingCard = () => {
       });
     };
 
-    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener('mousemove', handleMouseMove);
 
     return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
@@ -64,12 +64,12 @@ const MovingCard = () => {
           <div className='card-bg' ref={addBackgroundRef}></div>
           <img
             className='card-img'
-            alt='phone'
-            src={phoneImage}
+            alt='resume'
+            src={resumeImage}
             ref={addImageRef}
           />
           <div className='card-text'>
-            <p className='card-title'>010.9618.9614</p>
+            <p className='card-title'>이력서/경력기술서</p>
           </div>
         </div>
 
@@ -82,20 +82,27 @@ const MovingCard = () => {
             ref={addImageRef}
           />
           <div className='card-text'>
-            <p className='card-title'>im.lizhilun@gmail.com</p>
+            <a
+              href='mailto:im.lizhilun@gmail.com'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <p className='card-title'>이메일</p>
+            </a>
           </div>
         </div>
 
         <div className='card card-three'>
           <div className='card-bg' ref={addBackgroundRef}></div>
-          <img
-            className='card-img'
-            alt='birthday'
-            src={birthdayImage}
-            ref={addImageRef}
-          />
+          <img className='card-img' alt='git' src={git} ref={addImageRef} />
           <div className='card-text'>
-            <p className='card-title'>1996/11/14</p>
+            <a
+              href='https://github.com/lizhilunDev'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <p className='card-title'>GitHub</p>
+            </a>
           </div>
         </div>
       </div>
