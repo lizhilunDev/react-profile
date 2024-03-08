@@ -64,7 +64,7 @@ const Gnb = () => {
             onClick={(e) => handleNavigation(e, 'about')}
             className={activeMenu === 'about' ? 'active' : ''}
           >
-            Main
+            About Me
           </a>
         </li>
         <li>
@@ -91,7 +91,7 @@ const Gnb = () => {
             onClick={(e) => handleNavigation(e, 'projects')}
             className={activeMenu === 'projects' ? 'active' : ''}
           >
-            Main
+            Projects
           </a>
         </li>
         <li>
