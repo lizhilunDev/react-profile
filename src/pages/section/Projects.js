@@ -6,7 +6,13 @@ const Projects = () => {
 
   return (
     <>
-      <Section title={'Projects.'} content={content} noBorder={true}></Section>
+      <Section
+        id='work'
+        title={'Work Experience.'}
+        content={content}
+        noBorder={true}
+        description=''
+      ></Section>
     </>
   );
 };

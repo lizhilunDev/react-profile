@@ -75,8 +75,7 @@ const Skills = () => {
       imgSrc: cypressImg,
       imgAlt: 'Cypress',
       title: 'Cypress',
-      description:
-        'Cypress 를 이용하여 컴포넌트 테스트 및 e2e 테스트를 할 수 있습니다.',
+      description: 'Cypress 를 이용하여 컴포넌트 테스트를 할 수 있습니다.',
     },
   ];
 
@@ -118,6 +117,7 @@ const Skills = () => {
   return (
     <>
       <Section
+        id='skills'
         title={'Skills.'}
         content={content}
         description='박스에 마우스를 올려보세요!'

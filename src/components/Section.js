@@ -1,10 +1,19 @@
 import '../styles/components/Section.css';
 import classNames from 'classnames';
 
-const Section = ({ title, content, noBorder = false, description = '' }) => {
+const Section = ({
+  id,
+  title,
+  content,
+  noBorder = false,
+  description = '',
+}) => {
   return (
     <>
-      <section className={classNames('section', { 'no-border': noBorder })}>
+      <section
+        id={id}
+        className={classNames('section', { 'no-border': noBorder })}
+      >
         <div className='section-title-wrap'>
           <h1>
             <span>{title}</span>

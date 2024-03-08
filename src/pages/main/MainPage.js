@@ -1,10 +1,10 @@
-import MainTitle from "./MainTitle";
-import MainWave from "./MainWave";
+import MainTitle from './MainTitle';
+import MainWave from './MainWave';
 
 const MainPage = () => {
   return (
     <>
-      <section className='main-wrap'>
+      <section id='main' className='main-wrap'>
         <MainWave></MainWave>
         <MainTitle></MainTitle>
       </section>
