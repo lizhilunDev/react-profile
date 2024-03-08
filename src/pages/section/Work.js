@@ -1,7 +1,7 @@
 import Section from '../../components/Section';
 import Slider from '../../components/Slider';
 
-const Projects = () => {
+const Work = () => {
   const content = <Slider></Slider>;
 
   return (
@@ -16,4 +16,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Work;

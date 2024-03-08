@@ -2,7 +2,7 @@ import MainPage from './main/MainPage';
 import Cursor from '../components/Cursor';
 import Links from './section/Links';
 import Skills from './section/Skills';
-import Projects from './section/Projects';
+import Work from './section/Work';
 import End from './end/End';
 import { useEffect } from 'react';
 
@@ -17,7 +17,7 @@ const Page = () => {
     <>
       <MainPage />
       <Skills />
-      <Projects />
+      <Work />
       <Links />
       <End />
 
