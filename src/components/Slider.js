@@ -43,7 +43,6 @@ const Slider = () => {
         contents: [
           'Google Authenticator 을 이용한 OTP 인증 구현',
           'REST API 형식의 CRUD 개발',
-          'REST API 형식의 CRUD 개발',
         ],
       },
       {
@@ -56,7 +55,6 @@ const Slider = () => {
   };
 
   const kw2 = {
-    linkUrl: 'https://www.kudosworks.co.kr/',
     title: 'Kudos Works 2.0',
     subTitles: ['2023.09 ~ 2024.12'],
     descriptions: [
@@ -206,7 +204,6 @@ const Slider = () => {
             page={1}
           />
           <Slide
-            linkUrl={kw2.linkUrl}
             title={kw2.title}
             subTitles={kw2.subTitles}
             chip={kw2.chip}
