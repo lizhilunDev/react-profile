@@ -72,7 +72,7 @@ const Slide = ({
             )}
           </div>
           <div className='page-wrapper'>
-            <h2 className='page'>{page} / 5</h2>
+            <h2 className='page'>{page} / 4</h2>
           </div>
         </div>
 
