@@ -9,14 +9,10 @@ const Section = ({ id, title, content, className, description = '' }) => {
           <h1>
             <span>{title}</span>
           </h1>
+          {description && <span>{description}</span>}
         </div>
-        <div className='container'>{content}</div>
 
-        {description && (
-          <div className='description-wrap'>
-            <span>{description}</span>
-          </div>
-        )}
+        <div className='container'>{content}</div>
       </section>
     </>
   );
