@@ -1,10 +1,12 @@
+import { useEffect } from 'react';
 import MainPage from './main/MainPage';
 import Cursor from '../components/Cursor';
 import Links from './section/Links';
 import Skills from './section/Skills';
 import Work from './section/Work';
 import End from './end/End';
-import { useEffect } from 'react';
+import Projects from './section/Projects';
+import AboutMe from './section/AboutMe';
 
 const Page = () => {
   useEffect(() => {
@@ -16,8 +18,10 @@ const Page = () => {
   return (
     <>
       <MainPage />
+      <AboutMe />
       <Skills />
       <Work />
+      <Projects />
       <Links />
       <End />
 

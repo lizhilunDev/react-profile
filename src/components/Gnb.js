@@ -8,7 +8,7 @@ const Gnb = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (isNavigating) return;
-      const sections = ['main', 'skills', 'work', 'links'];
+      const sections = ['main', 'about', 'skills', 'work', 'projects', 'links'];
       const currentSection = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {
@@ -55,7 +55,15 @@ const Gnb = () => {
             onClick={(e) => handleNavigation(e, 'main')}
             className={activeMenu === 'main' ? 'active' : ''}
           >
-            {' '}
+            Main
+          </a>
+        </li>
+        <li>
+          <a
+            href='#about'
+            onClick={(e) => handleNavigation(e, 'about')}
+            className={activeMenu === 'about' ? 'active' : ''}
+          >
             Main
           </a>
         </li>
@@ -75,6 +83,15 @@ const Gnb = () => {
             className={activeMenu === 'work' ? 'active' : ''}
           >
             Work Experience
+          </a>
+        </li>
+        <li>
+          <a
+            href='#projects'
+            onClick={(e) => handleNavigation(e, 'projects')}
+            className={activeMenu === 'projects' ? 'active' : ''}
+          >
+            Main
           </a>
         </li>
         <li>
