@@ -10,7 +10,7 @@ const Work = () => {
         id='work'
         title={'Work Experience.'}
         content={content}
-        description=''
+        description='업무로 진행된 프로젝트들에 대한 내용입니다.'
       />
     </>
   );
