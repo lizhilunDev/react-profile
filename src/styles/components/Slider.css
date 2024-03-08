@@ -76,6 +76,9 @@
 .slide .inner-left .page {
   color: #484848;
   font-size: 0.7em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .slide .inner-right {
   max-height: 350px;
@@ -120,6 +123,9 @@
   margin-bottom: 5px;
   display: inline-block;
   color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .slide h2.fe {
   background-color: #ffb3b3;
@@ -131,7 +137,7 @@
   background-color: #ffe9ae;
 }
 .slide h2.description {
-  background-color: rgba(131, 131, 131, 0.4549019608);
+  background-color: #838383;
 }
 .slide li {
   margin: 10px;

@@ -92,6 +92,7 @@ $slider-height: 450px;
     .page {
       color: #484848;
       font-size: 0.7em;
+      user-select: none;
     }
   }
 
@@ -149,6 +150,7 @@ $slider-height: 450px;
       margin-bottom: 5px;
       display: inline-block;
       color: white;
+      user-select: none;
     }
 
     &.fe {
@@ -164,7 +166,7 @@ $slider-height: 450px;
     }
 
     &.description {
-      background-color: #83838374;
+      background-color: #838383;
     }
   }
 
