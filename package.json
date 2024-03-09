@@ -5,7 +5,8 @@
   "homepage": "http://lizhilundev.github.io/react-profile/",
   "scripts": {
     "build": "webpack",
-    "start": "webpack serve --mode development --open"
+    "start": "webpack serve --mode development --open",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
