@@ -1,7 +1,0 @@
-.skill-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 80px);
-  gap: 30px;
-  align-items: center;
-}

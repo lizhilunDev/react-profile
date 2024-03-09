@@ -1,9 +1,0 @@
-.final-section {
-  background: linear-gradient(to bottom, #ffffff, #ffe9ae, #ffb3b3, #c1efff);
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-}
