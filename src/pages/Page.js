@@ -1,12 +1,12 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import MainPage from './main/MainPage';
-import Cursor from '../components/Cursor';
-import Links from './section/Links';
-import Skills from './section/Skills';
-import Work from './section/Work';
+import Cursor from '../components/Cursor/Cursor';
+import Links from './sections/Links';
+import Skills from './sections/Skills';
+import Work from './sections/Work';
 import End from './end/End';
-import Projects from './section/Projects';
-import AboutMe from './section/AboutMe';
+import Projects from './sections/Projects';
+import AboutMe from './sections/AboutMe';
 
 const Page = () => {
   useEffect(() => {

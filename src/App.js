@@ -1,5 +1,6 @@
-import Gnb from './components/Gnb';
+import Gnb from './components/Gnb/Gnb';
 import Page from './pages/Page';
+import React from 'react';
 
 function App() {
   return (

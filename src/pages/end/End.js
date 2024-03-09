@@ -1,4 +1,5 @@
-import "../../styles/pages/end/End.css";
+import React from 'react';
+import './End.scss';
 
 const End = () => {
   return (

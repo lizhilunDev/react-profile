@@ -1,0 +1,61 @@
+$slider-width: 1020px;
+$slider-height: 450px;
+
+.slider {
+  position: relative;
+  width: $slider-width;
+  height: $slider-height;
+  margin-bottom: 6vh;
+}
+
+.slide-container {
+  overflow: hidden;
+  position: relative;
+  width: $slider-width;
+  height: $slider-height;
+  z-index: 1;
+  border-radius: 30px;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.05);
+}
+
+.slide-wrapper {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: -$slider-width;
+  width: 5100px;
+  transition: left 0.5s ease-in-out;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  margin-top: -20px;
+}
+
+.prev,
+.next {
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    transform: scale(1.8);
+  }
+}
+
+.prev {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+  left: -55px;
+}
+
+.next {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+  right: -55px;
+}
