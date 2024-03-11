@@ -48,3 +48,19 @@
     }
   }
 }
+
+@media (max-width: 820px) and (min-width: 461px) {
+  .skill-card {
+    &:hover {
+      height: 90px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .skill-card {
+    &:hover {
+      height: 82px;
+    }
+  }
+}
