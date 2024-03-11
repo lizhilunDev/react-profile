@@ -3,8 +3,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import Slide from '../Slide/Slide.js';
 
 const Slider = () => {
-  const SLIDE_WIDTH = 1020;
-
   const [index, setIndex] = useState(0);
   const slidesRef = useRef(null);
 
@@ -187,9 +185,24 @@ const Slider = () => {
   };
 
   useEffect(() => {
-    if (slidesRef.current) {
-      slidesRef.current.style.left = `-${index * SLIDE_WIDTH}px`;
-    }
+    const updateSlideWidth = () => {
+      let slideWidth;
+
+      if (window.innerWidth <= 820 && window.innerWidth > 460) slideWidth = 630;
+      else if (window.innerWidth > 820) slideWidth = 1020;
+      else {
+        slideWidth = 320;
+      }
+
+      if (slidesRef.current) {
+        slidesRef.current.style.left = `-${index * slideWidth}px`;
+      }
+    };
+
+    updateSlideWidth();
+    window.addEventListener('resize', updateSlideWidth);
+
+    return () => window.removeEventListener('resize', updateSlideWidth);
   }, [index]);
 
   return (

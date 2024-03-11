@@ -1,11 +1,10 @@
 $slider-width: 1020px;
-$slider-height: 450px;
+$slider-height: 420px;
 
 .slider {
   position: relative;
   width: $slider-width;
   height: $slider-height;
-  margin-bottom: 6vh;
 }
 
 .slide-container {
@@ -58,4 +57,48 @@ $slider-height: 450px;
 .next {
   background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
   right: -55px;
+}
+
+@media (max-width: 820px) and (min-width: 461px) {
+  .slider {
+    width: 630px;
+    height: 500px;
+  }
+
+  .slide-container {
+    width: 630px;
+    height: 500px;
+  }
+
+  .slide-wrapper {
+    left: -630px;
+    width: 2520px;
+  }
+}
+
+@media (max-width: 460px) {
+  .slider {
+    width: 320px;
+    height: 450px;
+  }
+
+  .slide-container {
+    width: 320px;
+    height: 450px;
+  }
+
+  .slide-wrapper {
+    left: -320px;
+    width: 450px;
+  }
+
+  .prev {
+    left: -40px;
+    top: 200px;
+  }
+
+  .next {
+    right: -40px;
+    top: 200px;
+  }
 }
