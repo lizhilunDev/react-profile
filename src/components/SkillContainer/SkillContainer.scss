@@ -16,8 +16,10 @@
 
 @media (max-width: 460px) {
   .skill-container {
+    position: relative;
+    top: -20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, 80px);
-    gap: 2px 25px;
+    gap: 0px 25px;
   }
 }

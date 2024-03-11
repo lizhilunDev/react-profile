@@ -54,6 +54,8 @@
 @media (max-width: 460px) {
   #main > .title-wrapper {
     height: 57vh;
+    position: relative;
+    top: -2px;
 
     h1 {
       font-size: 65px;

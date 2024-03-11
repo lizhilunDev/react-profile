@@ -6,3 +6,9 @@
   background-color: rgba(28, 28, 28, 0.671);
   pointer-events: none;
 }
+
+@media (max-width: 460px) {
+  .circle {
+    display: none;
+  }
+}

@@ -59,8 +59,9 @@
 
 @media (max-width: 460px) {
   .skill-card {
+    height: 50px;
     &:hover {
-      height: 82px;
+      height: 75px;
     }
   }
 }
