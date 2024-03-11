@@ -1,8 +1,9 @@
 @import url(/src/scss/style.scss);
 
-.title-wrap {
+#main > .title-wrapper {
   position: relative;
   height: 60vh;
+  width: 100vw;
   background-color: #c1efff;
   text-align: center;
 
@@ -28,6 +29,34 @@
 
     span {
       display: block;
+    }
+  }
+
+  .sub-title {
+    user-select: none;
+    display: inline-block;
+    padding: 2px 5px;
+    margin-top: 40px;
+    font-size: 12px;
+    color: #313131;
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: 820px) and (min-width: 461px) {
+  #main > .title-wrapper {
+    h1 {
+      font-size: 90px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  #main > .title-wrapper {
+    height: 57vh;
+
+    h1 {
+      font-size: 65px;
     }
   }
 }
