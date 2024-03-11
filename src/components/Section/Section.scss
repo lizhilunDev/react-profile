@@ -33,6 +33,7 @@
 
 .section-title-wrap {
   align-self: end;
+  width: 100vw;
 
   h1 {
     user-select: none;
@@ -53,5 +54,21 @@
     font-size: 12px;
     color: #7c7b7b;
     user-select: none;
+  }
+}
+
+@media (max-width: 820px) and (min-width: 461px) {
+  .section-title-wrap {
+    h1 {
+      font-size: 80px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .section-title-wrap {
+    h1 {
+      font-size: 65px;
+    }
   }
 }
