@@ -5,8 +5,6 @@ import Links from './sections/Links';
 import Skills from './sections/Skills';
 import Work from './sections/Work';
 import End from './end/End';
-import Projects from './sections/Projects';
-import AboutMe from './sections/AboutMe';
 
 const Page = () => {
   useEffect(() => {
@@ -18,10 +16,8 @@ const Page = () => {
   return (
     <>
       <MainPage />
-      <AboutMe />
       <Skills />
       <Work />
-      <Projects />
       <Links />
       <End />
 

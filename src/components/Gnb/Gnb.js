@@ -12,10 +12,8 @@ const Gnb = () => {
 
       const sections = [
         PAGE.MAIN,
-        PAGE.ABOUT_ME,
         PAGE.SKILLS,
         PAGE.WORK_EXPERIENCE,
-        PAGE.PROJECTS,
         PAGE.LINKS,
       ];
 
@@ -77,15 +75,6 @@ const Gnb = () => {
         </li>
         <li>
           <a
-            href={`#${PAGE.ABOUT_ME}`}
-            onClick={(e) => handleNavigation(e, PAGE.ABOUT_ME)}
-            className={activeMenu === PAGE.ABOUT_ME ? 'active' : ''}
-          >
-            About Me
-          </a>
-        </li>
-        <li>
-          <a
             href={`#${PAGE.SKILLS}`}
             onClick={(e) => handleNavigation(e, PAGE.SKILLS)}
             className={activeMenu === PAGE.SKILLS ? 'active' : ''}
@@ -100,15 +89,6 @@ const Gnb = () => {
             className={activeMenu === PAGE.WORK_EXPERIENCE ? 'active' : ''}
           >
             Work Experience
-          </a>
-        </li>
-        <li>
-          <a
-            href={`#${PAGE.PROJECTS}`}
-            onClick={(e) => handleNavigation(e, PAGE.PROJECTS)}
-            className={activeMenu === PAGE.PROJECTS ? 'active' : ''}
-          >
-            Projects
           </a>
         </li>
         <li>
