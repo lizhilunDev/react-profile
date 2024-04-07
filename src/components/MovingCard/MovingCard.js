@@ -68,7 +68,13 @@ const MovingCard = () => {
             ref={addImageRef}
           />
           <div className='card-text'>
-            <p className='card-title'>이력서/경력기술서</p>
+            <a
+              href='https://drive.google.com/file/d/1T4OFgtctcYNNi8jSDRfpTawdAPZBc29-/view?usp=sharing'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <p className='card-title'>이력서/경력기술서</p>
+            </a>
           </div>
         </div>
 
